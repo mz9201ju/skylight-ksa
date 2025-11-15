@@ -4,7 +4,7 @@
 Skylight KSA delivers end-to-end engineering, IT, and civil solutions across the Kingdom of Saudi Arabia.
 We focus on quality execution, premium service, and enterprise-grade delivery — ensuring every project hits the mark.
 
-![Skylight KSA Screenshot](https://api.microlink.io?url=https://mz9201ju.github.io/skylight-ksa/&screenshot=true&type=png&meta=false&embed=screenshot.url)
+![Skylight KSA Screenshot](https://api.microlink.io?url=https://mz9201ju.github.io/skylight-ksa/#/&screenshot=true&type=png&meta=false&embed=screenshot.url)
 
 ---
 
@@ -80,7 +80,7 @@ Cloudflare Pages:
 
 ## Contact
 info@skylightksa.com
-www.skylightksa.com
+[www.skylightksa.com](https://mz9201ju.github.io/skylight-ksa/#/sitemap.xml) 
 Saudi Arabia
 
 ---

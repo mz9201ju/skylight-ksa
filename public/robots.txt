@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block system files
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /vite.svg
+
+# Sitemap
+Sitemap: https://mz9201ju.github.io/skylight-ksa/#/sitemap.xml
