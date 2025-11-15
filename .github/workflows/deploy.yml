@@ -38,6 +38,15 @@ jobs:
       - name: 🪄 Add 404 fallback for SPA routing
         run: cp dist/index.html dist/404.html
 
+      - name: 🚫 Force cache bypass (GitHub Pages _headers)
+        run: |
+          cat << 'EOF' > dist/_headers
+          /*
+            Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+            Pragma: no-cache
+            Expires: 0
+          EOF
+
       - name: 📤 Upload artifact for deployment
         uses: actions/upload-pages-artifact@v3
         with:
