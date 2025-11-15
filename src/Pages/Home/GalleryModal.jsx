@@ -136,6 +136,7 @@ export default function GalleryModal({ item, onClose }) {
                         src={item.gallery[activeIndex]}
                         style={styles.bigImg}
                         alt="gallery"
+                        loading="lazy"
                     />
                 </div>
 
@@ -151,6 +152,7 @@ export default function GalleryModal({ item, onClose }) {
                                     : styles.thumb
                             }
                             onClick={() => setActiveIndex(idx)}
+                            loading="lazy"
                         />
                     ))}
                 </div>

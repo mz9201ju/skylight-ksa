@@ -155,6 +155,7 @@ export default function ClientLogos({ title, slideTo = "left" }) {
                                 e.stopPropagation();
                                 setSelectedLogo(logo);
                             }}
+                            loading="lazy"
                         />
                     ))}
                 </div>
@@ -167,6 +168,7 @@ export default function ClientLogos({ title, slideTo = "left" }) {
                         className="popup-img"
                         style={styles.popupImg}
                         alt="Preview"
+                        loading="lazy"
                     />
                 </div>
             )}

@@ -84,6 +84,7 @@ export default function PartnersVideoSection() {
                 style={styles.logo}
                 src={falconfly}
                 alt="FalconFly Logo"
+                loading="lazy"
             />
 
             {/* Subtitle */}

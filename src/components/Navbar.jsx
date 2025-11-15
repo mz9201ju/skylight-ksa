@@ -191,7 +191,7 @@ export default function Navbar() {
                 {/* LOGO */}
                 <Link to="/" style={{ textDecoration: "none" }}>
                     <div style={styles.logoArea}>
-                        <img src={logo} style={styles.logoImg} />
+                        <img src={logo} style={styles.logoImg} loading="lazy" />
 
                         <div style={styles.textBlock}>
                             <div style={styles.title}>Skylight</div>

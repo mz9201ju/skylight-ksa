@@ -86,7 +86,7 @@ export default function LearnMoreModal({ item, onClose }) {
                 <h2 style={styles.header}>{item.name}</h2>
 
                 {/* IMAGE */}
-                <img src={item.img} alt={item.name} style={styles.img} />
+                <img src={item.img} alt={item.name} style={styles.img} loading="lazy" />
 
                 {/* DESCRIPTION */}
                 {item.description && <p style={styles.desc}>{item.description}</p>}

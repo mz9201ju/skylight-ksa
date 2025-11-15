@@ -215,7 +215,7 @@ export default function Section({ title, items, bg }) {
                                         }
                                     }}
                                 >
-                                    <img src={item.img} alt={item.name} style={styles.img} />
+                                    <img src={item.img} alt={item.name} style={styles.img} loading="lazy" />
                                     <h3>{item.name}</h3>
 
                                     {/* Auto Modal Button */}

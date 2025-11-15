@@ -123,6 +123,7 @@ export default function PartnerActionSection() {
                     src={images[index]}
                     style={styles.image}
                     alt="Partner action showcase"
+                    loading="lazy"
                 />
 
                 {/* Right arrow */}

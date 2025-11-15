@@ -119,7 +119,7 @@ export default function InsideTeamGrid() {
             <div style={styles.grid}>
                 {team.map((p, i) => (
                     <div key={i} style={styles.card}>
-                        <img src={p.img} style={styles.img} alt={p.name} />
+                        <img src={p.img} style={styles.img} alt={p.name} loading="lazy" />
 
                         <h3 style={styles.name}>{p.name}</h3>
 

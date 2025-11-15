@@ -157,7 +157,7 @@ export default function Footer() {
             <div style={styles.container}>
                 {/* LEFT */}
                 <div style={styles.left}>
-                    <img src={logo} alt="Skylight Logo" style={styles.logo} />
+                    <img src={logo} alt="Skylight Logo" style={styles.logo} loading="lazy" />
                     <p style={styles.slogan}>
                         Innovative solutions tailored to your needs.
                         <br />
@@ -229,6 +229,7 @@ export default function Footer() {
                             src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/1024px-Snapchat_logo.svg.png"
                             alt="Snapchat"
                             style={{ width: "22px", filter: "drop-shadow(0 0 1px black)" }}
+                            loading="lazy"
                         />
                     </div>
 

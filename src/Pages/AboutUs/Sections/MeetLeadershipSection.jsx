@@ -116,7 +116,7 @@ export default function MeetLeadershipSection() {
             {/* CEO Card */}
             <div style={{ display: "flex", justifyContent: "center", marginBottom: "50px" }}>
                 <div style={styles.card}>
-                    <img src={CEO.img} alt={CEO.name} style={styles.image} />
+                    <img src={CEO.img} alt={CEO.name} style={styles.image} loading="lazy" />
                     <h3 style={styles.name}>{CEO.name}</h3>
 
                     {/* Special color for Founder */}
@@ -130,7 +130,7 @@ export default function MeetLeadershipSection() {
             <div style={styles.grid}>
                 {leadership.map((person, i) => (
                     <div key={i} style={styles.card}>
-                        <img src={person.img} alt={person.name} style={styles.image} />
+                        <img src={person.img} alt={person.name} style={styles.image} loading="lazy" />
                         <h3 style={styles.name}>{person.name}</h3>
                         <p style={styles.role}>{person.role}</p>
                         <p style={styles.description}>{person.description}</p>
