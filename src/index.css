@@ -19,3 +19,12 @@ body {
     background: linear-gradient(180deg, #0D1522 0%, #0A1018 100%);
     color: white;
 }
+
+/* Fix Safari blur issues */
+@supports (-webkit-touch-callout: none) {
+    * {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translateZ(0);
+    }
+}

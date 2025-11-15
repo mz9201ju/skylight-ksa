@@ -55,11 +55,11 @@ export default function Navbar() {
 
             borderRadius: "40px",
             background: "rgba(255,255,255,0.08)",
-            backdropFilter: "blur(12px)",
+            backdropFilter: isMobile ? "none" : "blur(12px)",
             border: "1px solid rgba(255,255,255,0.15)",
 
-            position: isMobile ? "relative" : "fixed",
-            top: isMobile ? "initial" : "15px",
+            position: isMobile ? "sticky" : "fixed",
+            top: isMobile ? "0" : "15px",
             left: 0,
             right: 0,
             zIndex: 50,
@@ -165,9 +165,9 @@ export default function Navbar() {
             width: "100%",
             padding: "30px 0",
             textAlign: "center",
-            background: "rgba(255,255,255,0.10)",
+            background: "rgba(0,0,0,0.40)",   // ← simple background, no blur
             borderRadius: "25px",
-            backdropFilter: "blur(12px)",
+            backdropFilter: "none",           // ← SUPER IMPORTANT
             zIndex: 25,
         },
 
