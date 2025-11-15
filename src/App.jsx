@@ -10,7 +10,6 @@ import Career from "./Pages/Career/Career";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 
-import GlobalWhatsAppButton from "./components/GlobalWhatsAppButton";
 
 export default function App() {
     return (
@@ -24,9 +23,6 @@ export default function App() {
                 <Route path="/about" element={<AboutUs />} />
                 <Route path="/contact" element={<ContactUs />} />
             </Routes>
-
-            {/* WhatsApp Floating Button */}
-            <GlobalWhatsAppButton />
 
             <Footer />
         </>
