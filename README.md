@@ -80,7 +80,7 @@ Cloudflare Pages:
 
 ## Contact
 info@skylightksa.com
-[www.skylightksa.com](https://mz9201ju.github.io/skylight-ksa/#/sitemap.xml) 
+[www.skylightksa.com](https://mz9201ju.github.io/skylight-ksa/sitemap.xml) 
 Saudi Arabia
 
 ---

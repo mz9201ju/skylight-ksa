@@ -7,4 +7,4 @@ Disallow: /src/
 Disallow: /vite.svg
 
 # Sitemap
-Sitemap: https://mz9201ju.github.io/skylight-ksa/#/sitemap.xml
+Sitemap: https://mz9201ju.github.io/skylight-ksa/sitemap.xml
