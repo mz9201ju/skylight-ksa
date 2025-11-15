@@ -1,12 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
+import GalleryModal from "./GalleryModal";
+import LearnMoreModal from "./LearnMoreModal";
 
-export default function Section({ title, items, bg, componentModel: ModalComponent }) {
+export default function Section({ title, items, bg }) {
     const [index, setIndex] = useState(0);
     const [visibleCount, setVisibleCount] = useState(3);
     const [inView, setInView] = useState(false);
 
     const [modalOpen, setModalOpen] = useState(false);
     const [modalData, setModalData] = useState(null);
+    const [modalType, setModalType] = useState(null); // "gallery" or "learn"
 
     const sectionRef = useRef(null);
 
@@ -53,18 +56,25 @@ export default function Section({ title, items, bg, componentModel: ModalCompone
     const translate = (index * 100) / items.length;
 
     // ------------------------------------------------------------
-    // 📌 Open Modal with item data
+    // 📌 Open Modal Automatically Based On Item
     // ------------------------------------------------------------
     const openModal = (item) => {
         setModalData(item);
+
+        if (Array.isArray(item.gallery) && item.gallery.length > 0) {
+            setModalType("gallery");
+        } else {
+            setModalType("learn");
+        }
+
         setModalOpen(true);
     };
 
     // ------------------------------------------------------------
-    // 📌 Button label based on modal type
+    // 📌 Auto button text rule
     // ------------------------------------------------------------
-    const buttonText =
-        ModalComponent?.name === "GalleryModal"
+    const getButtonText = (item) =>
+        Array.isArray(item.gallery) && item.gallery.length > 0
             ? "View Gallery"
             : "Learn More";
 
@@ -128,11 +138,8 @@ export default function Section({ title, items, bg, componentModel: ModalCompone
             transition: "all 0.3s ease",
             cursor: "pointer",
 
-            /* HOVER EFFECT (desktop only) */
             ...(window.innerWidth > 768
-                ? {
-                    transform: "translateY(0px)",
-                }
+                ? { transform: "translateY(0px)" }
                 : {}),
         },
         img: {
@@ -191,15 +198,19 @@ export default function Section({ title, items, bg, componentModel: ModalCompone
                                         if (window.innerWidth > 768) {
                                             e.currentTarget.style.transform = "scale(1.05)";
                                             e.currentTarget.style.background = "rgba(255,255,255,0.12)";
-                                            e.currentTarget.style.border = "1px solid rgba(255,255,255,0.25)";
-                                            e.currentTarget.style.boxShadow = "0 8px 20px rgba(0,0,0,0.25)";
+                                            e.currentTarget.style.border =
+                                                "1px solid rgba(255,255,255,0.25)";
+                                            e.currentTarget.style.boxShadow =
+                                                "0 8px 20px rgba(0,0,0,0.25)";
                                         }
                                     }}
                                     onMouseLeave={(e) => {
                                         if (window.innerWidth > 768) {
                                             e.currentTarget.style.transform = "scale(1)";
-                                            e.currentTarget.style.background = "rgba(255,255,255,0.07)";
-                                            e.currentTarget.style.border = "1px solid rgba(255,255,255,0.12)";
+                                            e.currentTarget.style.background =
+                                                "rgba(255,255,255,0.07)";
+                                            e.currentTarget.style.border =
+                                                "1px solid rgba(255,255,255,0.12)";
                                             e.currentTarget.style.boxShadow = "none";
                                         }
                                     }}
@@ -207,15 +218,13 @@ export default function Section({ title, items, bg, componentModel: ModalCompone
                                     <img src={item.img} alt={item.name} style={styles.img} />
                                     <h3>{item.name}</h3>
 
-                                    {/* Modal Action Button */}
-                                    {ModalComponent && (
-                                        <button
-                                            style={styles.learnBtn}
-                                            onClick={() => openModal(item)}
-                                        >
-                                            {buttonText}
-                                        </button>
-                                    )}
+                                    {/* Auto Modal Button */}
+                                    <button
+                                        style={styles.learnBtn}
+                                        onClick={() => openModal(item)}
+                                    >
+                                        {getButtonText(item)}
+                                    </button>
                                 </div>
                             </div>
                         ))}
@@ -230,12 +239,13 @@ export default function Section({ title, items, bg, componentModel: ModalCompone
                 )}
             </section>
 
-            {/* Attach modal */}
-            {ModalComponent && modalOpen && (
-                <ModalComponent
-                    item={modalData}
-                    onClose={() => setModalOpen(false)}
-                />
+            {/* Auto Modal Renderer */}
+            {modalOpen && modalType === "gallery" && (
+                <GalleryModal item={modalData} onClose={() => setModalOpen(false)} />
+            )}
+
+            {modalOpen && modalType === "learn" && (
+                <LearnMoreModal item={modalData} onClose={() => setModalOpen(false)} />
             )}
         </>
     );
