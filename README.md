@@ -1,16 +1,89 @@
-# React + Vite
+# Skylight KSA
+**Engineering, IT, and Civil Excellence — Built for the Kingdom**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Skylight KSA delivers end-to-end engineering, IT, and civil solutions across the Kingdom of Saudi Arabia.
+We focus on quality execution, premium service, and enterprise-grade delivery — ensuring every project hits the mark.
 
-Currently, two official plugins are available:
+![Skylight KSA Screenshot](https://api.microlink.io?url=https://mz9201ju.github.io/skylight-ksa/&screenshot=true&type=png&meta=false&embed=screenshot.url)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Vision
+To redefine standards in IT, Glass & Aluminum, and Civil Engineering, helping Saudi Arabia build future-ready infrastructure.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Core Services
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Glass & Aluminum
+- Curtain walls
+- Windows & façades
+- Aluminum fabrication
+- Automatic sliding doors
+
+### IT Solutions
+- Network infrastructure
+- Cybersecurity
+- Server setup
+- CCTV & access control
+- Cloud migration
+
+### Civil Work
+- Commercial construction
+- Maintenance & renovation
+- Structural work
+- Gypsum, painting & interior finishing
+
+---
+
+## Tech Stack (Website)
+- ReactJS
+- Vite build system
+- Inline CSS
+- Responsive design
+- Cloudflare CDN + DNS
+- GitHub Pages hosting
+
+---
+
+## Project Structure
+src/
+  components/
+  Pages/
+  assets/
+  App.jsx
+  index.jsx
+
+---
+
+## Installation
+git clone https://github.com/mz9201ju/skylight-ksa.git
+cd skylight-ksa
+npm install
+npm run dev
+npm run build
+
+---
+
+## Deployment
+GitHub Pages:
+  npm run build
+  git add .
+  git commit -m "build"
+  git push origin main
+
+Cloudflare Pages:
+  Build command: npm run build
+  Output: dist
+
+---
+
+## Contact
+info@skylightksa.com
+www.skylightksa.com
+Saudi Arabia
+
+---
+
+## Brand Message
+Precision. Reliability. Engineering the Kingdom's future.
