@@ -23,7 +23,6 @@ export default function App() {
                 <Route path="/career" element={<Career />} />
                 <Route path="/about" element={<AboutUs />} />
                 <Route path="/contact" element={<ContactUs />} />
-                {/* Add more pages here */}
             </Routes>
 
             {/* WhatsApp Floating Button */}
