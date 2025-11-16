@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 // Import your images from patnerImages
 import appImg from "./patnerImages/app.jpg";

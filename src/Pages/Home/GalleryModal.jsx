@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function GalleryModal({ item, onClose }) {
     if (!item || !item.gallery) return null;

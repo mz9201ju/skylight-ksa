@@ -1,4 +1,3 @@
-import React from "react";
 import PartnersVideoSection from "./PartnersVideoSection";
 import PartnerActionSection from "./PartnerActionSection";
 import ContactForm from "../ContactForm";

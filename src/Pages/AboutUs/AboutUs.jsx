@@ -1,4 +1,3 @@
-import React from "react";
 import AboutSkylightSection from "./Sections/AboutSkylightSection";
 import WhyChooseSkylightSection from "./Sections/WhyChooseSkylightSection";
 import MeetLeadershipSection from "./Sections/MeetLeadershipSection";

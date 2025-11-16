@@ -1,4 +1,3 @@
-import React from "react";
 import Section from "./Section";
 import ClientLogos from "./ClientLogos";
 import StatisticsSection from "./StatisticsSection";

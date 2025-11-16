@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function ContactForm({ buttonText = "Submit Inquiry", showAttachment = true }) {
     const [form, setForm] = useState({

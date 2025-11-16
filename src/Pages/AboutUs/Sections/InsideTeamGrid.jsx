@@ -1,5 +1,3 @@
-import React from "react";
-
 // Importing real images
 import umer from "./leadershipImages/umer.jpg";
 import husnain from "./leadershipImages/husnain.jpg";

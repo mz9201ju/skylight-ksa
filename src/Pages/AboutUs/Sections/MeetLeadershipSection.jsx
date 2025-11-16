@@ -1,4 +1,3 @@
-import React from "react";
 import InsideTeamGrid from "./InsideTeamGrid";
 
 // IMPORT ALL IMAGES
