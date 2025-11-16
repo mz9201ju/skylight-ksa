@@ -9,10 +9,13 @@ import Career from "./Pages/Career/Career";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 
+import ScrollToTop from "./ScrollToTop";
 
 export default function App() {
     return (
         <>
+            <ScrollToTop />   {/* 🚀 Always ensure scroll reset */}
+            
             <Navbar />
 
             <Routes>
