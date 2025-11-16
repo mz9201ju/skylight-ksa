@@ -1,9 +1,7 @@
 import Section from "./Section";
 import ClientLogos from "./ClientLogos";
 import StatisticsSection from "./StatisticsSection";
-
-import LearnMoreModal from "./LearnMoreModal";
-import GalleryModal from "./GalleryModal";
+import OurProcess from "./OurProcess";
 
 // GlassServices
 import heraSt from "./homeImages/commercialGlassAluminium/heraSt.jpg";
@@ -215,6 +213,7 @@ export default function Home() {
 
             <ClientLogos title="Our Clients" slideTo="left" />
             <StatisticsSection />
+            <OurProcess />
         </div>
     );
 }
